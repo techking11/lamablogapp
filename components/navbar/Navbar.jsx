@@ -1,7 +1,8 @@
-import React from 'react'
-import styles from './navbar.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
+import ThemeToggle from '../themetoggle/ThemeToggle'
+import AuthLinks from '../authLinks/AuthLinks'
+import styles from './navbar.module.css'
 
 function Navbar() {
   return (
@@ -14,9 +15,11 @@ function Navbar() {
       </div>
       <div className={styles.logo}>lamablog</div>
       <div className={styles.links}>
-        <Link href="/">Homepage</Link>
+        <ThemeToggle />
+        <Link href="/">Home</Link>
         <Link href="/">Contact</Link>
         <Link href="/">About</Link>
+        <AuthLinks />
       </div>
     </div>
   )
