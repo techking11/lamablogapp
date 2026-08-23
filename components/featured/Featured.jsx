@@ -9,7 +9,7 @@ function Featured() {
       </h1>
       <div className={styles.post}>
         <div className={styles.imgContainer}>
-          <Image src="/p1.jpeg" alt="" fill className={styles.image} />
+          <Image src="/p1.jpeg" alt="Featured" fill className={styles.image} sizes='100vw, auto' loadingf="eager" />
         </div>
         <div className={styles.textContainer}>
           <h1 className={styles.postTitle}>Lorem ipsum dolor sit amet.</h1>

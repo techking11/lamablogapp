@@ -6,6 +6,7 @@ export const ThemeContext = createContext();
 
 const getFromLocalStorage = () => {
   if (typeof window !== "undefined") {
+    /* window exists on client browser, but not on server SSR of nextjs */
     const value = localStorage.getItem("theme");
     return value || "light";
   }

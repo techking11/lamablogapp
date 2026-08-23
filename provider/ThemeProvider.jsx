@@ -16,7 +16,6 @@ const ThemeProvider = ({ children }) => {
     return <div className={theme}>{children}</div>;
   }
 
-  // return <div className={theme}>{children}</div>
   return null;
 }
 

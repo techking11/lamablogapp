@@ -1,10 +1,16 @@
 import styles from './cardlist.module.css'
 import Pagination from '../pagination/Pagination'
+import Card from '../card/Card'
 
 function CardList() {
   return (
     <div className={styles.container}>
-      Card List Page
+      <h1 className={styles.title}>Recent Posts</h1>
+      <div className={styles.posts}>
+        <Card />
+        <Card />
+        <Card />
+      </div>
       <Pagination />
     </div>
   )
