@@ -1,8 +1,8 @@
 import CardList from '@/components/cardList/CardList'
-import styles from './blogpage.module.css'
+import styles from './blogPage.module.css'
 import Menu from '@/components/menu/Menu'
 
-function page() {
+function BlogPage() {
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>Style Blog</h1>
@@ -14,4 +14,4 @@ function page() {
   )
 }
 
-export default page
+export default BlogPage

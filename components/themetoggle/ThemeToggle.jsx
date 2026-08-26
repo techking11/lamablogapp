@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { useContext } from 'react'
 import { ThemeContext } from '@/context/ThemeContext'
-import styles from './themetoggle.module.css'
+import styles from './themeToggle.module.css'
 
 function ThemeToggle() {
   const { theme, toggle } = useContext(ThemeContext);

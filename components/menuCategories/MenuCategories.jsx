@@ -1,5 +1,5 @@
 import Link from "next/link"
-import styles from './menucategories.module.css'
+import styles from './menuCategories.module.css'
 
 function MenuCategories() {
   return (

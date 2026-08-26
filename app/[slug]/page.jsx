@@ -3,7 +3,7 @@ import styles from './singlePage.module.css'
 import Image from 'next/image'
 import Comments from '@/components/comments/Comments'
 
-function page() {
+function SinglePage() {
   return (
     <div className={styles.container}>
       <div className={styles.infoContainer}>
@@ -47,4 +47,4 @@ function page() {
   )
 }
 
-export default page
+export default SinglePage

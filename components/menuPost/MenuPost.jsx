@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import styles from "./menupost.module.css"
+import styles from "./menuPost.module.css"
 
 function MenuPost({ withImage = false }) {
   return (

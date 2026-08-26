@@ -1,4 +1,4 @@
-import styles from './cardlist.module.css'
+import styles from './cardList.module.css'
 import Pagination from '../pagination/Pagination'
 import Card from '../card/Card'
 
