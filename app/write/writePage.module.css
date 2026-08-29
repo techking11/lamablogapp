@@ -1,4 +1,4 @@
-.container {}
+/* .container {} */
 
 .editor {
   display: flex;
@@ -44,6 +44,7 @@
   border: none;
   outline: none;
   background-color: transparent;
+  color: #b3b3b1;
 }
 
 .input::placeholder {
@@ -59,4 +60,5 @@
   background-color: #1a8917;
   color: white;
   cursor: pointer;
+  border-radius: 20px;
 }
