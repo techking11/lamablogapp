@@ -3,4 +3,7 @@ import Google from "next-auth/providers/google"
 
 export const { handlers, signIn, signOut, auth } = NextAuth({
   providers: [Google],
+  AuthConfig: {
+    secret: process.env.BETTER_AUTH_SECRET,
+  }
 })
