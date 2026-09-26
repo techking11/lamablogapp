@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect } from 'react';
 import { useSession, signIn } from 'next-auth/react';
 import styles from './loginPage.module.css'
 import { useRouter } from 'next/navigation';
@@ -7,6 +8,12 @@ import { useRouter } from 'next/navigation';
 function LoginPage() {
   const { data, status } = useSession();
   const router = useRouter();
+
+  useEffect(() => {
+    if (status === 'authenticated') {
+      router.push("/");
+    }
+  }, [status])
 
   if (status === 'loading') {
     return (
@@ -16,9 +23,9 @@ function LoginPage() {
     )
   }
 
-  if (status === 'authenticated') {
-    router.push("/");
-  }
+
+
+
 
   return (
     <div className={styles.container}>
